@@ -1,2 +1,8 @@
 # ViZit
-iOS app to explore places, food, bar, coffee, weather in a city
+
+
+<h1>Team Members </h1>
+<li> Sandesh Basnet </li>
+<li> Vidhit Sharma </li>
+<li> Divyaraj Bakrola </li>
+<li> Syed Murtaza Kazmi </li>
