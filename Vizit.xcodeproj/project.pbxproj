@@ -26,6 +26,7 @@
 		0250D9ED21BD13DF0082D5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0250D9EB21BD13DF0082D5CF /* Main.storyboard */; };
 		0250D9EF21BD13E00082D5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0250D9EE21BD13E00082D5CF /* Assets.xcassets */; };
 		0250D9F221BD13E00082D5CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0250D9F021BD13E00082D5CF /* LaunchScreen.storyboard */; };
+		30767D6421C0EE2A00E65C85 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30767D6321C0EE2A00E65C85 /* PlacesViewController.swift */; };
 		7F6714F2094235A81985FC17 /* Pods_Vizit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569FC929A26F5D3C4C5B0E4 /* Pods_Vizit.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		0250D9F321BD13E00082D5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF85474544E3AD025BB04DF /* Pods-Vizit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vizit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vizit/Pods-Vizit.debug.xcconfig"; sourceTree = "<group>"; };
 		1BD036E3E1B52E9811C85D85 /* Pods-Vizit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vizit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vizit/Pods-Vizit.release.xcconfig"; sourceTree = "<group>"; };
+		30767D6321C0EE2A00E65C85 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		7569FC929A26F5D3C4C5B0E4 /* Pods_Vizit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vizit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				0234128521C0C4E7005679B0 /* WeatherData.swift */,
 				0234128721C0D70F005679B0 /* WeatherViewController.swift */,
 				0234128921C0DB47005679B0 /* FoodCell.swift */,
+				30767D6321C0EE2A00E65C85 /* PlacesViewController.swift */,
 			);
 			path = Vizit;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				TargetAttributes = {
 					0250D9E321BD13DF0082D5CF = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -204,16 +208,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Vizit/Pods-Vizit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
@@ -228,15 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Vizit-checkManifestLockResult.txt",
 			);
@@ -259,6 +255,7 @@
 				0234128621C0C4E7005679B0 /* WeatherData.swift in Sources */,
 				0234126E21BF3ED8005679B0 /* ContentViewController.swift in Sources */,
 				0234126C21BF3DED005679B0 /* ContentCell.swift in Sources */,
+				30767D6421C0EE2A00E65C85 /* PlacesViewController.swift in Sources */,
 				0234127021BF8466005679B0 /* CoffeeData.swift in Sources */,
 				0234127221BF86C7005679B0 /* BarData.swift in Sources */,
 				0234127A21BFAA91005679B0 /* CoffeeCell.swift in Sources */,
@@ -414,6 +411,7 @@
 			baseConfigurationReference = 0EF85474544E3AD025BB04DF /* Pods-Vizit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FYU8U58X8L;
 				INFOPLIST_FILE = Vizit/Info.plist;
@@ -423,6 +421,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vizit.Vizit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -433,6 +432,7 @@
 			baseConfigurationReference = 1BD036E3E1B52E9811C85D85 /* Pods-Vizit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FYU8U58X8L;
 				INFOPLIST_FILE = Vizit/Info.plist;
