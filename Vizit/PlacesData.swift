@@ -1,5 +1,5 @@
 //
-//  BarData.swift
+//  PlacesData.swift
 //  Vizit
 //
 //  Created by Sandesh Basnet on 12/10/18.
@@ -8,19 +8,17 @@
 
 import Foundation
 
-
-class BarData {
+class PlacesData {
     
-    static var results:[[String: Any]] = []
-    
+    static var results:[[String:Any]] = []
     
     init() {
         
     }
     
     static func fetchData(_ city: String!, _ state: String!) {
-    
-        let url = URL(string: "https://vizitus.herokuapp.com/bar")!
+        
+        let url = URL(string: "https://vizitus.herokuapp.com/places")!
         
         var request = URLRequest(url:url, cachePolicy: .reloadIgnoringCacheData, timeoutInterval: 10)
         request.httpMethod = "POST"
@@ -40,9 +38,9 @@ class BarData {
             
             if let data = data {
                 
-                BarData.results = try! JSONSerialization.jsonObject(with: data, options: [[]]) as! [[String:Any]]
+                PlacesData.results = try! JSONSerialization.jsonObject(with: data, options: [[]]) as! [[String:Any]]
                 
-                print(BarData.results)
+                print(PlacesData.results)
             }
             
             

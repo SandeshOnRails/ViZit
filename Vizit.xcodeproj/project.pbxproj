@@ -11,6 +11,11 @@
 		0234126E21BF3ED8005679B0 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234126D21BF3ED8005679B0 /* ContentViewController.swift */; };
 		0234127021BF8466005679B0 /* CoffeeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234126F21BF8466005679B0 /* CoffeeData.swift */; };
 		0234127221BF86C7005679B0 /* BarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234127121BF86C7005679B0 /* BarData.swift */; };
+		0234127421BF878B005679B0 /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234127321BF878B005679B0 /* FoodData.swift */; };
+		0234127621BF8807005679B0 /* PlacesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234127521BF8807005679B0 /* PlacesData.swift */; };
+		0234127821BFA99F005679B0 /* CoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234127721BFA99F005679B0 /* CoffeeViewController.swift */; };
+		0234127A21BFAA91005679B0 /* CoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234127921BFAA91005679B0 /* CoffeeCell.swift */; };
+		0234127C21C0978C005679B0 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234127B21C0978C005679B0 /* BarViewController.swift */; };
 		0250D9E821BD13DF0082D5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250D9E721BD13DF0082D5CF /* AppDelegate.swift */; };
 		0250D9EA21BD13DF0082D5CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250D9E921BD13DF0082D5CF /* ViewController.swift */; };
 		0250D9ED21BD13DF0082D5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0250D9EB21BD13DF0082D5CF /* Main.storyboard */; };
@@ -24,6 +29,11 @@
 		0234126D21BF3ED8005679B0 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		0234126F21BF8466005679B0 /* CoffeeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeData.swift; sourceTree = "<group>"; };
 		0234127121BF86C7005679B0 /* BarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarData.swift; sourceTree = "<group>"; };
+		0234127321BF878B005679B0 /* FoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
+		0234127521BF8807005679B0 /* PlacesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesData.swift; sourceTree = "<group>"; };
+		0234127721BFA99F005679B0 /* CoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewController.swift; sourceTree = "<group>"; };
+		0234127921BFAA91005679B0 /* CoffeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCell.swift; sourceTree = "<group>"; };
+		0234127B21C0978C005679B0 /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		0250D9E421BD13DF0082D5CF /* Vizit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vizit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0250D9E721BD13DF0082D5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0250D9E921BD13DF0082D5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +89,11 @@
 				0234126D21BF3ED8005679B0 /* ContentViewController.swift */,
 				0234126F21BF8466005679B0 /* CoffeeData.swift */,
 				0234127121BF86C7005679B0 /* BarData.swift */,
+				0234127321BF878B005679B0 /* FoodData.swift */,
+				0234127521BF8807005679B0 /* PlacesData.swift */,
+				0234127721BFA99F005679B0 /* CoffeeViewController.swift */,
+				0234127921BFAA91005679B0 /* CoffeeCell.swift */,
+				0234127B21C0978C005679B0 /* BarViewController.swift */,
 			);
 			path = Vizit;
 			sourceTree = "<group>";
@@ -222,11 +237,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0234127421BF878B005679B0 /* FoodData.swift in Sources */,
 				0234126E21BF3ED8005679B0 /* ContentViewController.swift in Sources */,
 				0234126C21BF3DED005679B0 /* ContentCell.swift in Sources */,
 				0234127021BF8466005679B0 /* CoffeeData.swift in Sources */,
 				0234127221BF86C7005679B0 /* BarData.swift in Sources */,
+				0234127A21BFAA91005679B0 /* CoffeeCell.swift in Sources */,
+				0234127621BF8807005679B0 /* PlacesData.swift in Sources */,
 				0250D9EA21BD13DF0082D5CF /* ViewController.swift in Sources */,
+				0234127C21C0978C005679B0 /* BarViewController.swift in Sources */,
+				0234127821BFA99F005679B0 /* CoffeeViewController.swift in Sources */,
 				0250D9E821BD13DF0082D5CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

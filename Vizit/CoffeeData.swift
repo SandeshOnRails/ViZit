@@ -10,13 +10,13 @@ import Foundation
 
 class CoffeeData {
     
-     var results:[[String:Any]] = []
+     static var results:[[String:Any]] = []
     
     init() {
         
     }
     
-    func fetchData(_ city: String!, _ state: String!) {
+    static func fetchData(_ city: String!, _ state: String!) {
         
         let url = URL(string: "https://vizitus.herokuapp.com/coffee")!
         
@@ -38,9 +38,9 @@ class CoffeeData {
             
             if let data = data {
                 
-                self.results = try! JSONSerialization.jsonObject(with: data, options: []) as! [[String:String]]
+                CoffeeData.results = try! JSONSerialization.jsonObject(with: data, options: [[]]) as! [[String:Any]]
                 
-                print(self.results)
+                print(CoffeeData.results)
             }
             
             

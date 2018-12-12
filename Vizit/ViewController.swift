@@ -19,6 +19,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var cityPickerControl: UIPickerView!
     
     
+    
+    
     var cityNames:[String] = []
     
     var stateNames:[String] = []
@@ -51,6 +53,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func searchButtonClicked(_ sender: Any) {
         
+        
+        CoffeeData.fetchData(selectedCity, selectedState)
+        //BarData.fetchData(selectedCity, selectedState)
+        //FoodData.fetchData(selectedCity, selectedState)
+        //PlacesData.fetchData(selectedCity, selectedState)
         
         self.performSegue(withIdentifier: "contentView", sender: nil)
     

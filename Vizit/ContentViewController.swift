@@ -26,6 +26,8 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
     var allContentImages:[String] = []
     var cellBackGround:[UIColor] = []
     
+    var identifiers:[String] = []
+    
     
     
     override func viewDidLoad() {
@@ -41,6 +43,8 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
         cellBackGround = [UIColor.cyan, UIColor.brown, UIColor.yellow, UIColor.green, UIColor.blue, UIColor.red]
         imageType.image = UIImage(named:"sf")
         self.title = navbarTitle
+        identifiers = ["coffee", "bars", "weather", "places", "food", "events"]
+        
         
         
         
@@ -65,6 +69,14 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.contentImage.image = UIImage(named:allContentImages[indexPath.row])
         
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let id = self.identifiers[indexPath.row]
+        
+        self.performSegue(withIdentifier:id , sender: nil)
     }
     
 
