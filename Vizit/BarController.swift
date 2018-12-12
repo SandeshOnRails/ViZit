@@ -1,5 +1,5 @@
 //
-//  BarViewController.swift
+//  BarController.swift
 //  Vizit
 //
 //  Created by Sandesh Basnet on 12/11/18.
@@ -8,21 +8,22 @@
 
 import UIKit
 
-class BarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BarController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-   @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-    
+        
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.rowHeight = 150
     }
     
-   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         print(BarData.results.count)
@@ -46,12 +47,12 @@ class BarViewController: UIViewController, UITableViewDataSource, UITableViewDel
         cell.businessPrice.text = price
         cell.businessLocation.text = address
         let url = URL(string:bar["image_url"] as! String)!
-                cell.barImage.af_setImage(withURL: url)
+        cell.coffeeImage.af_setImage(withURL: url)
         
         return cell
         
     }
     
     
-
+    
 }

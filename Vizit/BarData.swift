@@ -42,7 +42,7 @@ class BarData {
                 
                 BarData.results = try! JSONSerialization.jsonObject(with: data, options: [[]]) as! [[String:Any]]
                 
-                print(BarData.results)
+                //print(BarData.results)
             }
             
             

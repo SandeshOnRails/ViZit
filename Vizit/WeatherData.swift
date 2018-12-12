@@ -1,16 +1,16 @@
 //
-//  CoffeeData.swift
+//  WeatherData.swift
 //  Vizit
 //
-//  Created by Sandesh Basnet on 12/10/18.
+//  Created by Sandesh Basnet on 12/11/18.
 //  Copyright © 2018 Vizit. All rights reserved.
 //
 
 import Foundation
 
-class CoffeeData {
+class WeatherData {
     
-     static var results:[[String:Any]] = []
+    static var description: [String:Any] =  [:]
     
     init() {
         
@@ -18,7 +18,7 @@ class CoffeeData {
     
     static func fetchData(_ city: String!, _ state: String!) {
         
-        let url = URL(string: "https://vizitus.herokuapp.com/coffee")!
+        let url = URL(string: "https://vizitus.herokuapp.com/weather")!
         
         var request = URLRequest(url:url, cachePolicy: .reloadIgnoringCacheData, timeoutInterval: 10)
         request.httpMethod = "POST"
@@ -38,9 +38,9 @@ class CoffeeData {
             
             if let data = data {
                 
-                CoffeeData.results = try! JSONSerialization.jsonObject(with: data, options: [[]]) as! [[String:Any]]
+               WeatherData.description  = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
                 
-                //print(CoffeeData.results)
+                
             }
             
             
@@ -48,4 +48,7 @@ class CoffeeData {
         
         task.resume()
     }
-}
+    
+        
+    }
+
