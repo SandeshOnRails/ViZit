@@ -260,7 +260,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="131" id="VIr-lU-kkO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" rowHeight="131" id="VIr-lU-kkO" customClass="FoodCell" customModule="Vizit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="131"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VIr-lU-kkO" id="Pre-ba-084">
@@ -301,6 +301,13 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="businessLocation" destination="XEY-Fi-yPY" id="vZL-CA-xH4"/>
+                                            <outlet property="businessName" destination="Nyb-5t-ig2" id="Of7-xf-Ha5"/>
+                                            <outlet property="businessPrice" destination="6cJ-zZ-emr" id="FoR-o0-MSH"/>
+                                            <outlet property="businessRating" destination="WPB-26-js3" id="VKf-tS-plv"/>
+                                            <outlet property="foodImage" destination="oY4-Ql-OJm" id="QiC-j5-T3X"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -309,10 +316,7 @@
                         <viewLayoutGuide key="safeArea" id="juA-iC-pPd"/>
                     </view>
                     <connections>
-                        <outlet property="businessName" destination="Nyb-5t-ig2" id="ck4-dq-HBa"/>
-                        <outlet property="businessPrice" destination="6cJ-zZ-emr" id="8Kj-uC-jwp"/>
-                        <outlet property="businessRating" destination="WPB-26-js3" id="wYY-YK-bCY"/>
-                        <outlet property="foodImage" destination="oY4-Ql-OJm" id="JUa-XD-iKN"/>
+                        <outlet property="tableView" destination="mTc-4S-IrV" id="sXu-bO-OcM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGD-Ij-WtJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

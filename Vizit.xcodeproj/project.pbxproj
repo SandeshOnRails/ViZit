@@ -20,6 +20,7 @@
 		0234128421C0C4C4005679B0 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234128321C0C4C4005679B0 /* FoodViewController.swift */; };
 		0234128621C0C4E7005679B0 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234128521C0C4E7005679B0 /* WeatherData.swift */; };
 		0234128821C0D70F005679B0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234128721C0D70F005679B0 /* WeatherViewController.swift */; };
+		0234128A21C0DB47005679B0 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234128921C0DB47005679B0 /* FoodCell.swift */; };
 		0250D9E821BD13DF0082D5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250D9E721BD13DF0082D5CF /* AppDelegate.swift */; };
 		0250D9EA21BD13DF0082D5CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250D9E921BD13DF0082D5CF /* ViewController.swift */; };
 		0250D9ED21BD13DF0082D5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0250D9EB21BD13DF0082D5CF /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		0234128321C0C4C4005679B0 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		0234128521C0C4E7005679B0 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		0234128721C0D70F005679B0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		0234128921C0DB47005679B0 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		0250D9E421BD13DF0082D5CF /* Vizit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vizit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0250D9E721BD13DF0082D5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0250D9E921BD13DF0082D5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				0234128321C0C4C4005679B0 /* FoodViewController.swift */,
 				0234128521C0C4E7005679B0 /* WeatherData.swift */,
 				0234128721C0D70F005679B0 /* WeatherViewController.swift */,
+				0234128921C0DB47005679B0 /* FoodCell.swift */,
 			);
 			path = Vizit;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0234127421BF878B005679B0 /* FoodData.swift in Sources */,
+				0234128A21C0DB47005679B0 /* FoodCell.swift in Sources */,
 				0234128821C0D70F005679B0 /* WeatherViewController.swift in Sources */,
 				0234128221C0AE6E005679B0 /* BarCell.swift in Sources */,
 				0234128621C0C4E7005679B0 /* WeatherData.swift in Sources */,
