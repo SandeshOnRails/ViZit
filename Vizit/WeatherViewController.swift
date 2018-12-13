@@ -13,23 +13,38 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
+    @IBOutlet weak var temperature: UILabel!
+    
+    @IBOutlet weak var maxTemp: UILabel!
+    
+    
+    @IBOutlet weak var minTemp: UILabel!
+    
+    
+    @IBOutlet weak var humidity: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.descriptionLabel.text = WeatherData.description["description"] as! String!
+        
+        let desc = WeatherData.description["description"] as! String!
+        
+        self.descriptionLabel.text = "Description: \(desc! as! String!)"
+        
+        let weather = WeatherData.description["main"] as! [String:Any]
+        
+        self.temperature.text = "Temperature:  \(String(weather["temp"] as! Double))"
+        
+        self.minTemp.text =  "Min Temp: \(String(weather["temp_min"] as! Double))"
+        
+        self.maxTemp.text = "Max Temp: \(String(weather["temp_max"] as! Double))"
+        
+        self.humidity.text = "Humidity: \(String(weather["humidity"]as! Double))"
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
