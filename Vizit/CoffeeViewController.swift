@@ -9,23 +9,24 @@
 import UIKit
 import AlamofireImage
 
-class CoffeeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CoffeeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+
+{
     
-    
-    
-    
+
+   
     @IBOutlet weak var tableView: UITableView!
-    
-    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.rowHeight = 150
-      
+        // Do any additional setup after loading the view.
+        
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.rowHeight = 150
+        
         
     }
     
@@ -46,21 +47,23 @@ class CoffeeViewController: UIViewController, UITableViewDataSource, UITableView
         let location = coffee["location"] as! [String:Any]
         let address = location["address1"] as! String
         
-        cell.businessName.text = name
-        cell.businessRating.text = String(rating)
-        cell.businessPrice.text = price
-        cell.businessLocation.text = address
+        cell.businessName.text = "Name: \(name)"
+        cell.businessRating.text = "Rating: \(String(rating))"
+        cell.businessPrice.text = "Price: \(price)"
+        cell.businessLocation.text = "Location: \(address)"
         let url = URL(string:coffee["image_url"] as! String)!
         
-        print(url)
         cell.coffeeImage.af_setImage(withURL: url)
         
+        
+        cell.backgroundColor = UIColor.lightGray
+
+        
         return cell
-        
-        
     }
     
     
     
-     
+
+
 }
