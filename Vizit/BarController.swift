@@ -36,11 +36,11 @@ class BarController: UIViewController, UITableViewDataSource, UITableViewDelegat
         let cell = tableView.dequeueReusableCell(withIdentifier: "barCell") as! BarCell
         
         let bar = BarData.results[indexPath.row]
-        let name = bar["name"] as! String
-        let rating = bar["rating"] as! Double
-        let price = bar["price"] as! String
+        let name = "Name: \(bar["name"] as! String)"
+        let rating = "Rating: \(bar["rating"] as! Double)"
+        let price =  "Price: \(bar["price"] as! String)"
         let location = bar["location"] as! [String:Any]
-        let address = location["address1"] as! String
+        let address = "Location: \(location["address1"] as! String)"
         
         cell.businessName.text = name
         cell.businessRating.text = String(rating)
@@ -48,6 +48,9 @@ class BarController: UIViewController, UITableViewDataSource, UITableViewDelegat
         cell.businessLocation.text = address
         let url = URL(string:bar["image_url"] as! String)!
         cell.coffeeImage.af_setImage(withURL: url)
+        
+        cell.backgroundColor = UIColor.lightGray
+
         
         return cell
         

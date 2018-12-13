@@ -38,11 +38,11 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell") as! FoodCell
         
         let food = FoodData.results[indexPath.row]
-        let name = food["name"] as! String
-        let rating = food["rating"] as! Double
-        let price =  food["price"] as! String
+        let name = "Food: \(food["name"] as! String)"
+        let rating = "Rating: \(food["rating"] as! Double)"
+        let price =  "Price: \(food["price"] as! String)"
         let location = food["location"] as! [String:Any]
-        let address = location["address1"] as! String
+        let address = "Location: \(location["address1"] as! String)"
         
         cell.businessName.text = name
         cell.businessRating.text = String(rating)
@@ -51,7 +51,8 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let url = URL(string:food["image_url"] as! String)!
         
         cell.foodImage.af_setImage(withURL: url)
-        
+        cell.backgroundColor = UIColor.lightGray
+
         
         return cell
         

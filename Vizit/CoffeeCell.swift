@@ -9,7 +9,22 @@
 import UIKit
 
 class CoffeeCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var coffeeImage: UIImageView!
+    
+    
+    @IBOutlet weak var businessName: UILabel!
+    
+    
+    @IBOutlet weak var businessPrice: UILabel!
+    
+    
+    @IBOutlet weak var businessRating: UILabel!
+    
+    @IBOutlet weak var businessLocation: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

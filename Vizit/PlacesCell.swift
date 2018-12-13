@@ -11,16 +11,28 @@ import UIKit
 class PlacesCell: UITableViewCell {
     
     
-
+    @IBOutlet weak var placesImage: UIImageView!
+    
+    
+    @IBOutlet weak var businessName: UILabel!
+    
+    
+    
+    @IBOutlet weak var businessRating: UILabel!
+    
+    @IBOutlet weak var businessLocation: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
     }
 
 }

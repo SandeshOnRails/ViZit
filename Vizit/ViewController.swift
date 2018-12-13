@@ -55,7 +55,7 @@ class ViewController: UIViewController{
         BarData.fetchData(selectedCity, selectedState)
         WeatherData.fetchData(selectedCity, selectedState)
         FoodData.fetchData(selectedCity, selectedState)
-        //PlacesData.fetchData(selectedCity, selectedState)
+        PlacesData.fetchData(selectedCity, selectedState)
         
         self.performSegue(withIdentifier: "contentView", sender: nil)
     
